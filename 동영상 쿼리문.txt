@@ -1,0 +1,19 @@
+insert into seat(seat_number, car_number, phone_number) values ('11', '11가1111','010-1111-1111');
+
+insert into seat(seat_number, car_number, phone_number) values ('3', '3나3333','010-3333-3333');
+
+insert into seat(seat_number, car_number, phone_number) values ('19', '19다1919','010-1919-1919');
+
+ >> select * from seat; 문으로 테이블 확인
+
+update seat set seat_number='5', car_number='5라5555', phone_number='010-5555-5555' where seat_number ='3';
+
+>> select * from seat; 로 변경된 사항 확인 
+
+delete from seat where seat_number='5';
+insert into profit(car_number, pay, coupon) values ('5라5555', 203, 'yes');
+
+delete from seat where seat_number='19';
+insert into profit(car_number, pay, coupon) values ('19다1919', 350, 'no');
+
+>> select * from seat 과 select * from profit; 으로 변경된 사항 확인
